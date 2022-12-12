@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(cover.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+nav {
+  text-align: center;
+}
+nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+nav ul li {
+  width: 130px;
+
+  margin: 10px;
+
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.active,
+nav ul li:hover {
+  background: lightblue;
+
+  border-radius: 50px;
+}
+
+.sub-menu {
+  display: none;
+}
+nav ul li:hover .sub-menu {
+  display: block;
+
+  position: absolute;
+
+  background: white;
+
+  border-radius: 50px;
+}
+
+nav ul li:hover .sub-menu ul {
+  display: block;
+
+  margin: 1 px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 150px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#content {
+  background-image: url(Movies-in-Cinemas-this-December-2022-1-768x432.png);
+  margin: 0 auto;
+  width: 1200px;
+  height: 500px;
+  background-size: cover;
+  justify-content: center;
+  background-repeat: no-repeat;
+  right: 0;
+  left: 0;
+  top: 20%;
+  bottom: 0;
+  align-items: center;
+  z-index: -1;
+  background-position: center;
+}
+.text-box {
+  color: #fff;
+  bottom: 10%;
+  z-index: -1;
+}
+.text-box h1 {
+  font-size: 40px;
+  line-height: 450px;
+  margin-left: 20px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  position: static;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+#header {
+  margin: 0 auto;
+  width: 500px;
+  height: 45px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+}
+#header img {
+  width: 150px;
+  height: 100px;
+}
